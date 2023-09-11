@@ -23,6 +23,11 @@ module.exports = {
   "inter": "Inter",
   "roboto": "Roboto"
  },
+ "screens": {
+  phone: '274px',
+  // tablette: '425px',
+  desktop: '1024px'
+},
  "borderRadius": {
   "none": "0",
   "xs": "0.46525049209594727rem",
