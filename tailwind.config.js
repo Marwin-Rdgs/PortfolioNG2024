@@ -19,9 +19,8 @@ module.exports = {
   "2xl": "2.8125rem"
  },
  "fontFamily": {
-  "julius-sans-one": "Julius Sans One",
-  "inter": "Inter",
-  "roboto": "Roboto"
+  "swap": "Carter One",
+  "sans": "Josefin Sans",
  },
  "screens": {
   phone: '274px',
