@@ -1,18 +1,34 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import '../../vantajs/dist/vanta.globe.min'
+// import ''
 declare var VANTA: any; // Déclaration de la variable VANTA
+declare var AOS: any; // Déclaration de la variable AOS
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent implements OnInit {
+  
   constructor(private el: ElementRef) {}
 
   ngOnInit() {
+    
     this.initGlobe(); // Appel de la fonction d'initialisation de l'animation
+    this.AOSinit(); // Appel de la fonction d'initialisation de l'animation de scroll
   }
+
+AOSinit() {
+  const script = document.createElement('script');
+  script.src = 'https://unpkg.com/aos@2.3.1/dist/aos.js'
+
+  script.onload = () => {
+    AOS.init();
+  }
+}
+
 
   initGlobe() {
     const script = document.createElement('script');
