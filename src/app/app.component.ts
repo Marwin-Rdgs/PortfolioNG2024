@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
+// import { app-card-project } from './card-project/card-project.component';
 import '../../vantajs/dist/vanta.globe.min'
 // import ''
 declare var VANTA: any; // Déclaration de la variable VANTA
