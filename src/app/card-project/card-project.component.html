@@ -1,28 +1,35 @@
-<div class="grid grid-cols-2">
-    
+<div class="grid desktop:grid-cols-2">
+   
     <!-- Contents -->
-    <div>
+    <div class="desktop:ml-auto desktop:mr-auto">
         <!-- Title -->
-        <div>
-            <p>Theme Project</p>
-            <h1>Title Project</h1>
+        <div class="mb-4">
+            <p class="text-noir">Theme Project</p>
+            <h1 class="text-jaune text-lg font-bold">Title Project</h1>
         </div>
+
 
         <!-- Description -->
-        <div class="absolute z-50 w-1.5">
-            <div class="w-full h-full bg-blue"></div>
-            <p>Description Project</p>
+        <div class="desktop:absolute z-50 desktop:w-2/5">
+            <div class="desktop:w-full desktop:h-full bg-jaune bg-opacity-30 desktop:absolute z-10 rounded-lg"></div>
+            <p class="z-20 relative text-noir my-3 px-5">Description of the projet.
+                top artists, top tracks, recently played tracks, and detailed audio
+                information about each track. Create and save new playlists of
+                recommended tracks based on your existing playlists and more.</p>
         </div>
 
+
         <!-- Buttons -->
-        <div class="flex gap-12">
-            <a href=""><button>View Repos</button></a>
-            <a href=""><button>View Site</button></a>
-            <a href=""><button>View Docs</button></a>
+        <div class="flex gap-12 desktop:mt-48 phone:mt-10">
+            <a href=""><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Repos</button></a>
+            <a href=""><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Site</button></a>
+            <a href=""><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Docs</button></a>
         </div>
     </div>
 
-    <div>
-        <img src="../../assets/img/emorphoz.gif" alt="">
+
+    <div class="w-10/12 relative phone:mt-10 desktop:mt-0 phone:mr-auto phone:ml-auto desktop:mr-0 desktop:ml-0">
+        <div class="w-full h-full bg-jaune opacity-60 z-0 absolute bottom-5 right-5 rounded-md"></div>
+        <img src="../../assets/img/emorphoz.gif" alt="" class="relative z-10 rounded-md w-full opacity-80">
     </div>
 </div>
