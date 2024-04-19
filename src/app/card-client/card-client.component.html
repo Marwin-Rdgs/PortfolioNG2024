@@ -1,0 +1,12 @@
+<div class="flex gap-6 items-center">
+    <img :src="{{client.photo}}" alt="" class="rounded-full w-1/12">
+    <div>
+        <p>{{client.name}}</p>
+        <p>{{client.poste}} <a :href="{{client.url}}" class="hover:animate-pulse hover:underline text-jaune">{{client.projet}}</a></p>
+    </div>
+</div>
+
+<div class="relative mt-2 w-10/12">
+    <div class="desktop:w-full desktop:h-full bg-noir blur-sm bg-opacity-20 desktop:absolute z-10 rounded-lg border-2"></div>
+    <p class="text-sm px-4 py-2">{{client.avis}}</p>
+</div>
