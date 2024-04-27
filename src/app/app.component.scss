@@ -283,3 +283,22 @@ footer .wave#wave4 {
         background-position-x: 1000px;
     }
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.logos-slide {
+  display: inline-flex;
+  animation: 12s slide infinite linear;
+}
