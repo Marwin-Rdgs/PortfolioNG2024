@@ -8,4 +8,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .paused {
+        animation-play-state: paused;
+    }
+}
+
 @import "/node_modules/animate.css/animate.min.css"

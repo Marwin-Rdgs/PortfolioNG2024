@@ -1,3 +1,5 @@
+const { transform } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: {transform: "translateX(-100%)"},
+        },
+      },
  "colors": {
   "jaune": "#f0a500",
   "bleu": "#2c3236",
