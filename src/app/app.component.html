@@ -1029,22 +1029,110 @@
   </div>
     <!-- Avis Clients -->
 
-    <div class="grid phone:gap-y-5 desktop:grid-cols-2 mt-10 desktop:ml-8 desktop:mr-8">
+    <!-- <div class="grid phone:gap-y-5 desktop:grid-cols-2 mt-10 desktop:ml-8 desktop:mr-8">
       
       <app-card-client [client]="clientJadyss"/>
       
       <app-card-client [client]="clientChooseMe"/>
 
-    </div>
+    </div> -->
 
-    <p>faire un carrousel</p>
+    <div class="relative w-11/12 mx-auto desktop:mt-20 phone:mt-40">
+      <div class="w-full" style="scroll-snap-type: x mandatory;">
+         <!-- first -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
+            <!-- content #1 -->
+            <div class="absolute top-1/2 transform -translate-y-1/2 bg-white rounded-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+
+               <div class="grid phone:gap-y-5 desktop:grid-cols-2 mt-10 desktop:ml-8 desktop:mr-8 z-30">
+      
+                <app-card-client [client]="clientJadyss" class="z-30"/>
+                
+                <app-card-client [client]="clientChooseMe" class="z-30"/>
+          
+              </div>
+
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-3" class="inline-block text-blanc hover:text-jaune cursor-pointer -translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-2" class="inline-block text-blanc hover:text-jaune cursor-pointer translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!-- second -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
+            <!-- content #2 -->
+            <div
+               class="absolute top-1/2 transform -translate-y-1/2 rounded-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <div class="grid phone:gap-y-5 desktop:grid-cols-2 mt-10 desktop:ml-8 desktop:mr-8 z-30">
+      
+                <app-card-client [client]="clientJadyss" class="z-30"/>
+                
+                <app-card-client [client]="clientChooseMe" class="z-30"/>
+          
+              </div>
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-1" class="inline-block text-blanc hover:text-jaune cursor-pointer -translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-3" class="inline-block text-blanc hover:text-jaune cursor-pointer translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+         <!-- three -->
+         <div class="">
+            <input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
+            <!-- content #3 -->
+            <div class="absolute top-1/2 transform -translate-y-1/2 rounded-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+               <div class="grid phone:gap-y-5 desktop:grid-cols-2 mt-10 desktop:ml-8 desktop:mr-8 z-30">
+      
+                <app-card-client [client]="clientJadyss" class="z-30"/>
+                
+                <app-card-client [client]="clientChooseMe" class="z-30"/>
+          
+              </div>
+               <!-- controls -->
+               <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="carousel-2" class="inline-block text-blanc hover:text-jaune cursor-pointer -translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+                  <label for="carousel-1" class="inline-block text-blanc hover:text-jaune cursor-pointer translate-x-5 bg-jaune hover:bg-blanc rounded-full shadow-md active:translate-y-0.5">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                     </svg>
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
 
 </section>
 
 
   <!-- Veille Technologique -->
 
-  <section class="mt-20 mb-20">
+  <section class="desktop:mt-60 phone:mt-80 mb-20">
 
     <h1 class="text-jaune desktop:text-2xl font-swap font-extralight mt-10 mb-20">Veille Technologique</h1>
 
