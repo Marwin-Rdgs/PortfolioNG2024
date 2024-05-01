@@ -26,6 +26,7 @@ export class HomeComponentComponent implements OnInit {
   // ===============
 
   projectEmorphoz!: Project;
+  projectiutNFCTV!: Project;
 
   
   constructor(private el: ElementRef) {}
@@ -41,7 +42,8 @@ export class HomeComponentComponent implements OnInit {
     this.clientChatonnay = new Client('Pascal CHATONNAY', 'Ensaignant', 'MMI Montbéliard', 'google.com','../../assets/clients/pascalChatonnay.jpg','trop bien');
     this.clientDany = new Client('Dany GALMICHE', 'Auto-entrepreneur', 'Dany Galmiche Design', 'google.com','../../assets/clients/danyGalmiche.jpeg',"J'adore zebi");
     
-    this.projectEmorphoz = new Project('Emorphoz', 'School', 'ouais ouais ça arrive', '#', '#', '#', '../../assets/img/emorphoz.gif');
+    this.projectiutNFCTV = new Project('iutNFCTV', 'School', "Site répertoriant l’ensemble des contenus multimédias de l’Institut Universitaire et Technologique de Nord Franche-Comté.", 'https://github.com/Beaurain-Hugo/themeWPIUTNFC', 'https://iutnfctv.beaurain-hugo.fr/', 'https://drive.google.com/file/d/1Vjzd0XLQN38mQEAPULErYO-k6uOO6Hbu/view?usp=sharing', '../../assets/img/iutNFCTV.gif');
+    this.projectEmorphoz = new Project('Emorphoz', 'School', 'E-morphoz est un générateur de NFT collaboratif où vous participez à la création de votre NFT en y ajoutant des accessoires. La température extérieure d’où vous êtes influe aussi sur le rendu final de la NFT. Une fois généré, une partie des bénéfices de la NFT vous sera reversée à vous et à une association à chaque revente. ', 'https://github.com/emorphoz/emorphoz.net', 'https://emorphoz.marwin-rodrigues.fr/', 'https://drive.google.com/file/d/1V8l1vpnRiYibO4J6oVFJy24BSQvJjsK9/view?usp=sharing', '../../assets/img/emorphoz.gif');
 
 
     this.initGlobe(); // Appel de la fonction d'initialisation de l'animation
