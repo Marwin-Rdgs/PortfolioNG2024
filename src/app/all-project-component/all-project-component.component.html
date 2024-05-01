@@ -1,0 +1,17 @@
+<section id="Projets">
+    <div class="flex justify-center items-center gap-2">
+        <a routerLink="/"><button class="py-2 px-10 border-2 border-jaune rounded-full hover:bg-jaune hover:text-blanc hover:animate-pulse"> ❮ </button></a>
+        <h1 class="text-jaune desktop:text-2xl text-center font-swap font-extralight mt-10 mb-20">Mes Projets</h1>
+    </div>
+
+    <div class="grid gap-20">
+      <app-card-project [project]="projectEmorphoz"/>
+      <app-card-project [project]="projectEmorphoz"/>
+      <app-card-project [project]="projectEmorphoz"/>
+    </div>
+
+    <div class="flex justify-center mt-20">
+      <a routerLink="allProjects"><button class="bg-jaune py-3 px-12 border-noir border-2 rounded-xl hover:scale-105 text-blanc hover:text-noir hover:border-jaune hover:bg-opacity-40 ease-in-out transition-all">Voir Plus ...</button></a>
+    </div>
+
+  </section>

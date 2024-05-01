@@ -1,19 +1,18 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 // import { app-card-project } from './card-project/card-project.component';
-import '../../vantajs/dist/vanta.globe.min'
-import { Client } from './models/card-client.model';
-import { Project } from './models/card-project.model';
+import '../../../vantajs/dist/vanta.globe.min'
+import { Client } from '../models/card-client.model';
+import { Project } from '../models/card-project.model';
 // import ''
 declare var VANTA: any; // Déclaration de la variable VANTA
 declare var AOS: any; // Déclaration de la variable AOS
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home-component',
+  templateUrl: './home-component.component.html',
+  styleUrls: ['./home-component.component.scss']
 })
-
-export class AppComponent implements OnInit {
+export class HomeComponentComponent implements OnInit {
 
   clientChooseMe!: Client;
   clientAlternance!: Client;
