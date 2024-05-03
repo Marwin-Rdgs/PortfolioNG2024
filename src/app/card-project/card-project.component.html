@@ -18,9 +18,9 @@
 
         <!-- Buttons -->
         <div class="flex gap-12 desktop:mt-48 phone:mt-10">
-            <a :href="{{project.repos}}" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Repos</button></a>
-            <a :href="{{project.site}}" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Site</button></a>
-            <a :href="{{project.doc}}" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Docs</button></a>
+            <a :href="{{project.repos}}" *ngIf="project.repos != '#'" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Repos</button></a>
+            <a :href="{{project.site}}" *ngIf="project.site != '#'" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Site</button></a>
+            <a :href="{{project.doc}}" *ngIf="project.doc != '#'" target="_blank"><button class="bg-jaune bg-opacity-40 p-3 border-noir border-2 rounded-xl hover:scale-105 hover:text-blanc hover:bg-opacity-100 ease-in-out transition-all phone:text-xs desktop:text-base">View Docs</button></a>
         </div>
     </div>
 
