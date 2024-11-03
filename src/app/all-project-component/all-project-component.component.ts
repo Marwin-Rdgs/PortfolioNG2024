@@ -18,6 +18,9 @@ export class AllProjectComponentComponent implements OnInit {
   projectStweaming!: Project;
   projectTroisCentTeam!: Project;
   projectProdSquad!: Project;
+  projectDevred!: Project;
+  projectMToutFer!: Project;
+  projectTony!: Project;
 
   
   constructor(private el: ElementRef) {}
@@ -32,5 +35,8 @@ export class AllProjectComponentComponent implements OnInit {
     this.projectStweaming = new Project('Stweaming', 'Personel', "Projet personnel ayant pour objectif de regrouper l'ensemble des dessins animés, films, séries, animés d'internet sur une seule plateforme tout en ayant un système d'organisation, trie et d'utilisateur.", 'https://github.com/Marwin-Rdgs/Stweaming', '#', '#', '../../assets/img/stweaming.jpg');
     this.projectTroisCentTeam = new Project('Trois Cent Team', 'School', "Exercice pédagogique effectué durant mon année de seconde où l'ont découvrait le monde robotique et les bases de l'HTML avec Wix.", '#', 'https://marwin-rdgs25.wixsite.com/no-aim', '#', '../../assets/img/troiscentteam.jpg');
     this.projectProdSquad = new Project("Prod'Squad", 'Prestation', "Création d'un site internet dans l'objectif de faire la promotion d'une communauté autour d'un jeu vidéo nommé 'Minecraft'.", '#', 'https://marwin-rdgs25.wixsite.com/prodsquad', '#', '../../assets/img/prodsquad.png');
+    this.projectDevred = new Project("Devred", 'Prestation', "Réalisation d'un flyer pour promouvoir un défilé de mode privé mettant en avant des collections estivales", '#', 'https://www.linkedin.com/posts/marwin-rodrigues_mode-daezfilaez-aeztaez2024-activity-7201152078403043328-audW?utm_source=share&utm_medium=member_desktop', 'https://www.linkedin.com/feed/update/urn:li:activity:7204045444274925568', '../../assets/img/Com-Devred.jpeg');
+    this.projectMToutFer = new Project("MToutFer", 'Prestation', "Création de supports de communication print (cartes de visite, panneaux publicitaires, flyers) pour promouvoir MToutFer, entreprise spécialisée dans la récupération de ferraille et débarras.", '#', '#', 'https://www.linkedin.com/feed/update/urn:li:activity:7206218494026100736', '../../assets/img/Com-MToutFer.jpeg');
+    this.projectTony = new Project("MToutFer", 'Prestation', "Création de flyers pour promouvoir les services de nettoyage de véhicules et de tissus de Tony Rodrigues.", '#', '#', 'https://www.linkedin.com/feed/update/urn:li:activity:7251883261268750336', '../../assets/img/Com-Tony.jpeg');
 }
 }
