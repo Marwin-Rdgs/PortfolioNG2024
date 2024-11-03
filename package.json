@@ -20,6 +20,7 @@
     "@angular/router": "^16.2.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "fullpage.js": "^4.0.30",
     "rxjs": "~7.8.0",
     "three": "^0.156.1",
     "tslib": "^2.3.0",

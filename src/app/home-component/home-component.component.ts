@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 // import { app-card-project } from './card-project/card-project.component';
+// import { FullPageWrapperComponent } from '../full-page-wrapper/full-page-wrapper.component';
 import '../../../vantajs/dist/vanta.globe.min'
 import { Client } from '../models/card-client.model';
 import { Project } from '../models/card-project.model';
